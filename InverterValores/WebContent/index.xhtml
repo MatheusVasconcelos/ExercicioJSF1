@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<meta  http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Página de Inversão JSF</title>
+</head>
+<body>
+
+<h:form>
+   Texto1: <h:inputText value="${iversaoBean.texto1}">
+   </h:inputText>
+   
+   Texto2: <h:inputText value="${iversaoBean.texto2}">
+   </h:inputText>
+   
+   <h:commandButton id="inverter" action="#{inversaoBean.inverter}"
+			value="Inverter" />
+   
+   </h:form>
+   
+   
+
+</body>
+</html>
